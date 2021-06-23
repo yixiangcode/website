@@ -1,0 +1,159 @@
+.head{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    color:rgb(104, 220, 255);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    background-color: rgb(54, 20, 119);
+}
+
+.mainImage{
+    font-size: 3em;
+    color: rgb(255, 230, 0);
+    background-image: url(https://images.pexels.com/photos/270829/pexels-photo-270829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.mainImage h1{
+    color: rgb(0, 255, 191);
+}
+.mainImage h2{
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+    rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+.end{
+    color: rgb(0, 255, 255);
+    text-align: center ;
+    background-color: rgb(54, 20, 119);
+}
+
+@keyframes slide {
+    0%{
+      background-position-x: 0%;
+    }
+    100%{
+      background-position-x: 600vw;
+    }
+  }
+  
+body,html{
+    background-color: rgb(212, 212, 212);
+    cursor: cell;
+}
+
+a.effectFrame{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    color:#03e9f4;
+    font-size: 24px;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+a.effectFrame:hover{
+    background: #03e9f4;
+    color:#050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+a.effectFrame span{
+    position: absolute;
+    display: block;
+}
+a.effectFrame span:nth-child(1){
+   
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left:-100%;
+    }
+    50%,100%{
+        left:100%;
+    }
+}
+a.effectFrame span:nth-child(2){
+   
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top:-100%;
+    }
+    50%,100%{
+        top:100%;
+    }
+}
+a.effectFrame span:nth-child(3){
+   
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right:-100%;
+    }
+    50%,100%{
+        right:100%;
+    }
+}
+a.effectFrame span:nth-child(4){
+   
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom:-100%;
+    }
+    50%,100%{
+        bottom:100%;
+    }
+}
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Geo', sans-serif;
+    box-sizing: border-box;
+}
